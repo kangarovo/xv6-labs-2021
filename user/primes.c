@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
         sieve(p[0]);
         exit(0);
     }
-    
+
     wait(0);
 
     exit(0);

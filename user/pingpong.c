@@ -34,6 +34,6 @@ int main(int argc, char* argv[]) {
     printf("%d: received pong\n", pid);
 
     close(p[0]), close(p2[1]);
-    
+
     exit(0);
 }
