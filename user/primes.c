@@ -24,6 +24,7 @@ void sieve(int fd) {
     
     if(fork() == 0) {
         sieve(p[0]);
+        exit(0);
     }
     close(p[0]);
 
@@ -45,6 +46,7 @@ int main(int argc, char* argv[]) {
         sieve(p[0]);
         exit(0);
     }
+    
     wait(0);
 
     exit(0);
